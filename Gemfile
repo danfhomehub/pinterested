@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'aws-sdk', '~> 2.1.12'
+gem 'aws-sdk', '< 2.0'
 gem 'paperclip', '~> 4.2.1'
 gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0'
