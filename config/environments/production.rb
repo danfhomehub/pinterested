@@ -75,6 +75,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
+  
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = {host: 'daninterested.herokuapp.com'}
   
@@ -85,6 +86,8 @@ Rails.application.configure do
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
+  
+    
   }
   
 end
