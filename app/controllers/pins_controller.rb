@@ -3,6 +3,8 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :correct_user, only: [:edit, :update, :destroy]
 
+  respond_to :html
+
   def index
     @pins = Pin.all
   end
