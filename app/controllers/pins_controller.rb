@@ -36,7 +36,7 @@ class PinsController < ApplicationController
 
   def destroy
     @pin.destroy
-      redirect_to pins.url
+    respond_with(@pin)
   end
 
   private
